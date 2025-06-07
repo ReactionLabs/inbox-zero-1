@@ -1,5 +1,8 @@
 {
   "buildCommand": "cd ../.. && turbo run build --filter={apps/web}...",
   "installCommand": "cd ../.. && bash clone-marketing.sh && pnpm install",
-  "ignoreCommand": ""
+  "ignoreCommand": "",
+  "scripts": {
+    "vercel-build": "pnpm install && pnpm build"
+  }
 }
